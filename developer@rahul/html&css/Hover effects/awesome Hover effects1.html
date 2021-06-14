@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="awesome Hover effects">
+<meta http-equiv="refresh" content="">
+<meta name="viewpoint" content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" href="" type="image/jpg" sizes="16*16">
+<title>Buttons with awesome hover effects1</title>
+<style>
+body{padding: 0;
+     margin: 0;
+     }
+
+h1 {text-align: center;
+   color: darkgreen;
+   margin-top: 140px;
+   }
+
+.container {display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 160px;}
+
+.btn {border:2px solid #3188c2;
+         border-radius: 0 34px 0;
+         border-top-left-radius: 6px;
+         border-bottom-right-radius: 6px;
+         background: none;
+         padding: 20px 40px;
+         font-size: 20px;font-family:monospace;
+         cursor: pointer;
+         margin: 10px;
+         transition: 0.8s;
+         position: relative;
+         overflow: hidden;outline:none;
+         }
+
+.button1,.button2{color: #26ac3c;}
+.button3,.button4{color:#fff;}
+
+.button1:hover,.button2:hover{color: #fff;}
+.button3:hover,.button4:hover{color:#ff0505f5}
+
+ .btn::before{content:"" ;
+            position: absolute;
+            left: 0;width: 100%;height: 0%;
+            background: #17d16b;
+            z-index:-1;
+            transition: 0.8s;}
+
+.button1::before,.button3::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.button2::before,.button4::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.button3::before,.button4::before{
+       height: 180%;
+}
+.button1:hover::before,.button2:hover::before{
+    height: 180%;
+}
+.button3:hover::before,.button4:hover::before{
+    height: 0%;}
+</style>
+
+</head>
+<body>
+<h1><u>Awesome Hover effects</u></h1>
+<hr>
+<div class="container">
+    <button class="btn button1">Hover Me</button>
+    <button class="btn button2">Hover Me</button>
+    <button class="btn button3">Hover Me</button>
+    <button class="btn button4">Hover Me</button>
+</div>
+</body>
+</html>

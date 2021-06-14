@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="awesome Hover effects">
+<meta http-equiv="refresh" content="30">
+<meta name="viewpoint" content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" href="https://i.pinimg.com/originals/6b/b3/32/6bb332d59e3ab81474cf3b7484597dd7.jpg" type="image/jpg" sizes="16*16">
+<title>Buttons with awesome hover effects2</title>
+<style>
+body{margin: 0;
+    padding: 0;
+    background: #2d3436;
+    }
+
+h1 {text-align: center;
+   color: orange;
+   margin-top: 160px;}
+
+.container {text-align: center;
+            margin-top: 110px;}
+
+.btn {background: none;color:white;
+     border:2px solid orange;
+     border-radius: 34px 6px 34px 6px;
+     padding: 20px 40px;
+     margin: 20px;
+     font-family:monospace;font-size: 20px;
+     transition: is all ease;
+     overflow: hidden; outline:none;
+     position: relative;
+     }
+
+.btn::before {content:"";position: absolute;
+              top: 50%;left: 50%;transform: translate(-50%,-50%);
+              background:orange;
+              z-index:-1;
+              transition: all 0.8s ease;
+              }
+
+.Rahul1::before {width: 0;
+                height: 100%;}
+.Rahul1:hover::before {width: 100%;}
+
+.Rahul2::before {width: 100%;
+                height: 0;}
+.Rahu2:hover::before {height: 300%;}
+
+.Rahul3::before {width: 100%;
+                height: 0;
+                transform: translate(-50%,-50%) rotate(45deg);}
+.Rahu3:hover::before {height: 380%;}
+
+.Rahul4::before {width: 100%;
+                height: 0;
+                transform: translate(-50%,-50%) rotate(-45deg);}
+.btn:hover::before {height: 380%;}
+
+</style>
+
+</head>
+<body>
+<h1><u>Awesome Hover effect</u></h1>
+<hr>
+<div class="container">
+    <button class="btn Rahul1">Rahul k</button>
+    <button class="btn Rahul2">Rahul k</button>
+    <button class="btn Rahul3">Rahul k</button>
+    <button class="btn Rahul4">Rahul k</button>
+</div>
+</body>
+</html>
